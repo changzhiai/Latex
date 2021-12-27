@@ -1,0 +1,134 @@
+\documentclass{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%no packages
+%no newly defined commands
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title{my manuscript}
+
+\date{}
+
+\author{me\thanks{corresponding author} \thanks{my address}\and my best friend and co-author\thanks{address of best friend and co-author}\and the lazy guy who didn't do anything at all\footnotemark[3]\and my boss, because that is how one should do it\footnotemark[1] \footnotemark[2]}
+
+\maketitle
+
+\section{Abstract}
+
+My manuscript is about interesting research, and this is what we found.
+
+\section{Introduction}
+
+This and that is known already \cite{lita, litb, litc, litd}. Herein, we present some other new results.
+
+\section{Results and Discussion}
+
+Measuring this we got that. See Figure \ref{fig1} and Table \ref{tab1}. With equation \ref{eq1} we calculate {\bf{x}} and put it into equation \ref{eq2}.
+
+\begin{equation}
+{\bf{x}}=a+\Delta G_{free}
+\label{eq1}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%if your equations are more complicated, such as:
+
+\begin{equation}
+\left[\begin{array}{c}
+\psi^{L}\\
+\psi^{S}
+\end{array}\right]=\left[\begin{array}{cc}
+I_{2} & 0_{2}\\
+0_{2} & \frac{1}{2mc}\left(\sigma\cdot\bf{x}\right)
+\end{array}\right]\left[\begin{array}{c}
+\psi^{L}\\
+\phi^{L}
+\end{array}\right]
+\label{eq2}
+\end{equation}
+
+%then send every equation in a separate (according to the equation number numbered).pdf file and we treat them as graphic files, set by the %typesetter.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusions}
+
+Our results show that we were right and our ideas can be applied here and there.
+
+\section{Experimental Section}
+
+We did our experiments under these conditions using machines w and x, and chemicals y and z. For calculations we used the calculates-whatever-you-want program \cite{lite}.
+
+\section{Acknowledgment}
+
+We thank our research fund for the money.
+
+
+\section{Keywords}
+
+Keyword 1, keyword 2, keyword 3, keyword 4, keyword 5
+
+\section{TOC}
+
+This and that is shown (see picture \ref{TOCfig}) and can be used here and there.
+
+\begin{thebibliography}{99}
+
+\bibitem{lita} M. Mouse, D. Duck, {\em ChemPhysChem} {\bf 2005}, {\em 38}, 1764.
+\bibitem{litb} S. Cooper, L. Hofstadter, {\em Whatever you wanted to know.}, (Eds.:C. Lorre, B. Prady), Wiley-VCH, Weinheim, {\bf 2003}, pp. 1658-2014.
+\bibitem{litc} C. Brown (Peanuts Co.), patent number: US-A 549623, {\bf 2010}.
+\bibitem{litd} C. Kent, {\em Chem. Eur. J.} {\bf 2012}, unpublished results.
+\bibitem{lite} S. Brain, {\bf 2008}, http://www.calculates-whatever-you-want.com/maybe.
+
+\end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%alternatively you may use
+
+%\bibliographystyle{unsrt}
+%\bibliography{mymanuscript.bib}
+
+%and send the .bib file along with your manuscript
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\begin{figure}
+%\includegraphics{1}
+\caption{This figure shows this and that.}
+\label{fig1}
+\end{figure}
+
+\begin{figure}
+%\includegraphics{TOC}
+\caption{TOC figure.}
+\label{TOCfig}
+\end{figure}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l l l l l l}
+\hline
+\multicolumn{6}{c}{My data collection.}\\
+\hline
+entry & bla & blabla & blabli & blablu & blah\\
+\hline
+this & is & the & first$^{[a]}$ & row & data \\
+this & is & the & second & row & data \\
+\hline
+\end{tabular}
+\end{center}
+\caption{In this table my data is listed. [a] There is no zeroth row. }
+\label{tab1}
+\end{table}
+
+\end{document}
+
+
